@@ -1,0 +1,19 @@
+[project]
+name = "upside-my-app-01"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.12",
+    "uvicorn[standard]==0.34.0",
+    "pydantic==2.4.0",
+]
+
+[dependency-groups]
+test = [
+    "pytest==8.3.5",
+    "httpx==0.28.1",
+    "pytest-asyncio==0.25.3",
+]
+
+[tool.uv]
+exclude-newer = "2026-04-08T00:00:00Z"
